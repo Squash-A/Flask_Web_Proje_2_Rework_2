@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class = "jumbotron text-center" >
+        <h3>2.Python Web Site Projeme Hoşgeldiniz :)</h3>
+        {% if request.user.is_authenticated %}
+                <p>Hoşgeldin {{request.user.username}}</p>
+        {% else %}
+        {% endif %}
+</div>
+
+
+
+{% endblock body %}
+
